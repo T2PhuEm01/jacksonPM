@@ -10,15 +10,15 @@ class StaticUtils {
   static const String hi = 'assets/hi.gif';
 
   // photos
-  static const String mobilePhoto = 'assets/photos/mobile.png';
+  // static const String mobilePhoto = 'assets/photos/mobile.png';
+  static const String mobilePhoto = 'assets/photos/mobile1.jpg';
   static const String coloredPhoto = 'assets/photos/colored.png';
   static const String blackWhitePhoto = 'assets/photos/black-white.png';
 
   // work
   static const String dsc = 'assets/work/dsc.png';
-  static const String sastaticket = 'assets/work/st.png';
-  static const String university = 'assets/work/cui.png';
   static const String fullterIsb = 'assets/work/flutterIsl.png';
+  static const String egTechGroup = 'assets/work/egtechgroup.png';
 
   // services
   static const String uiux = 'assets/services/ui.png';

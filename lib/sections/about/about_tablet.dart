@@ -37,9 +37,28 @@ class AboutTab extends StatelessWidget {
             ),
           ),
           Space.y1!,
-          Image.asset(
-            StaticUtils.mobilePhoto,
-            height: height * 0.27,
+          // Image.asset(
+          //   StaticUtils.mobilePhoto,
+          //   height: height * 0.27,
+          // ),
+          Container(
+            height: height * 0.27, // Chiều cao của hình ảnh
+            width:
+                height * 0.27, // Chiều rộng để đảm bảo hình ảnh là hình vuông
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(
+                color: Colors.red, // Màu của viền
+                width: 5.0, // Độ dày của viền
+              ),
+            ),
+            child: ClipOval(
+              child: Image.asset(
+                StaticUtils.mobilePhoto,
+                fit: BoxFit
+                    .cover, // Đảm bảo hình ảnh phù hợp với khung hình tròn
+              ),
+            ),
           ),
           SizedBox(
             height: height * 0.03,
@@ -102,11 +121,11 @@ class AboutTab extends StatelessWidget {
                 children: [
                   AboutMeData(
                     data: "Name",
-                    information: "Muhammad Hamza",
+                    information: "Tran Thanh Phu Em",
                   ),
                   AboutMeData(
                     data: "Age",
-                    information: "24",
+                    information: "23",
                   ),
                 ],
               ),
@@ -118,11 +137,11 @@ class AboutTab extends StatelessWidget {
                 children: [
                   AboutMeData(
                     data: "Email",
-                    information: "hamza.6.shakeel@gmail.com",
+                    information: "ttphuem2k1@gmail.com",
                   ),
                   AboutMeData(
                     data: "From",
-                    information: "Attock, PK",
+                    information: "Tan Phu District, Ho Chi Minh City",
                   ),
                 ],
               ),

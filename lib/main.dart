@@ -70,7 +70,7 @@ class _MaterialChildState extends State<MaterialChild> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Phu Em',
+      title: 'JacksonPM Dev',
       theme: theme.themeLight,
       darkTheme: theme.themeDark,
       themeMode: widget.provider.themeMode,

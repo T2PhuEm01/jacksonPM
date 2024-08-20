@@ -47,9 +47,10 @@ dependencies:
   http: ^1.2.2
   universal_html: ^2.2.4
   url_strategy: ^0.3.0
-  flutter_html: ^2.2.1
   github: ^9.24.0
   flutter_screenutil: ^5.9.3
+  flutter_html: ^3.0.0-beta.2
+  
 
 dev_dependencies:
   flutter_test:
@@ -61,6 +62,27 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
+
+  #flutter pub add flutter_launcher_icons
+  flutter_launcher_icons: ^0.13.1
+
+# flutter_launcher_icons:
+#   android: "ic_launcher"
+#   ios: true
+#   image_path: "assets/icons/logo.png"
+#   min_sdk_android: 21 # android min sdk min:16, default 21
+#   web:
+#     generate: true
+#     image_path: "assets/icons/logo.png"
+#     background_color: "#hexcode"
+#     theme_color: "#hexcode"
+#   windows:
+#     generate: true
+#     image_path: "assets/icons/logo.png"
+#     icon_size: 48 # min:48, max:256, default: 48
+#   macos:
+#     generate: true
+#     image_path: "assets/icons/logo.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -76,6 +98,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
+    - assets/icons/
     - assets/work/
     - assets/photos/
     - assets/services/
