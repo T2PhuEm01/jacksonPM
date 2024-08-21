@@ -60,9 +60,9 @@ class _NavbarDesktop extends StatelessWidget {
                 },
                 activeColor: AppTheme.c!.primary!,
               ),
-              Space.x!,
             ],
           ),
+          Space.x!,
         ],
       ),
     );

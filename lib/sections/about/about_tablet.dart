@@ -52,11 +52,17 @@ class AboutTab extends StatelessWidget {
                 width: 5.0, // Độ dày của viền
               ),
             ),
-            child: ClipOval(
-              child: Image.asset(
-                StaticUtils.mobilePhoto,
-                fit: BoxFit
-                    .cover, // Đảm bảo hình ảnh phù hợp với khung hình tròn
+            child: CircleAvatar(
+              radius: (height * 0.27) / 2,
+              backgroundColor: Colors.transparent,
+              child: ClipOval(
+                child: Image.asset(
+                  StaticUtils.mobilePhoto,
+                  width: height * 0.26,
+                  height: height * 0.27,
+                  fit: BoxFit
+                      .cover, // Đảm bảo hình ảnh phù hợp với khung hình tròn
+                ),
               ),
             ),
           ),

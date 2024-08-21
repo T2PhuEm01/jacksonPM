@@ -2,8 +2,7 @@ part of '../services.dart';
 
 class _ServiceCardBackWidget extends StatelessWidget {
   const _ServiceCardBackWidget(
-      {Key? key, required this.serviceDesc, required this.serviceTitle})
-      : super(key: key);
+      {super.key, required this.serviceDesc, required this.serviceTitle});
 
   final String serviceDesc;
   final String serviceTitle;
@@ -16,7 +15,9 @@ class _ServiceCardBackWidget extends StatelessWidget {
       children: [
         Text(
           serviceDesc,
-          style: AppText.l1,
+          style: AppText.l1!.copyWith(
+            color: appProvider.isDark ? Colors.white : Colors.black38,
+          ),
         ),
         Divider(
           color: appProvider.isDark ? Colors.white : Colors.black38,
