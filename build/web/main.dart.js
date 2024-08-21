@@ -41003,7 +41003,7 @@ $S:60}
 A.ES.prototype={
 G(a){return B.I1}}
 A.EQ.prototype={
-G(a){var s,r,q,p,o,n,m,l,k=null,j="Montserrat",i=A.b1(a,k,t.w).w.a,h=A.cl(a,!0,t.C),g=i.b,f=$.jH,e=A.wc(0,A.vO(new A.eY(A.f_("assets/photos/black-white.png",k,k,i.a<1200?g*0.8:g*0.85),B.b0,B.bg,B.i,k),0.9),k,k,k,0,k,k),d=$.bk,c=$.hQ
+G(a){var s,r,q,p,o,n,m,l,k=null,j="Montserrat",i=A.b1(a,k,t.w).w.a,h=A.cl(a,!0,t.C),g=i.b,f=$.jH,e=A.wc(0,A.vO(new A.eY(A.f_("assets/photos/black-white1.png",k,k,i.a<1200?g*0.8:g*0.85),B.b0,B.bg,B.i,k),0.9),k,k,k,0,k,k),d=$.bk,c=$.hQ
 c.toString
 s=t.p
 c=A.cJ(A.a([A.bd("WELCOME TO MY PORTFOLIO! ",c.l5(h.a===B.n?B.f:B.j,j),k),new A.eY(A.f_("assets/hi.gif",k,k,$.bk*12*0.77+12),B.cT,B.bg,B.i,k)],s),B.r,B.aU)
@@ -41032,7 +41032,7 @@ m=$.a4o
 m.toString
 return A.bM(k,A.jI(B.bn,A.a([e,A.bM(k,A.dq(A.a([c,r,p,q,n,new A.eY(o,B.b0,B.bg,B.qS,k),m,B.iK],s),B.b_,B.r,B.x),k,k,k,new A.aN(d*30*0.77+30,d*80*0.77+80,0,0),k,k)],s),B.bZ),k,k,g*1.025,k,f,k)}}
 A.ER.prototype={
-G(a){var s,r,q,p,o,n,m,l,k=null,j="Montserrat",i=A.b1(a,k,t.w).w,h=A.cl(a,!0,t.C),g=$.bk,f=A.wc(0,A.vO(A.f_("assets/photos/black-white.png",k,k,g*150*0.77+150),0.9),k,k,k,-(g*25*0.77+25),k,k),e=$.oo
+G(a){var s,r,q,p,o,n,m,l,k=null,j="Montserrat",i=A.b1(a,k,t.w).w,h=A.cl(a,!0,t.C),g=$.bk,f=A.wc(0,A.vO(A.f_("assets/photos/black-white1.png",k,k,g*150*0.77+150),0.9),k,k,k,-(g*25*0.77+25),k,k),e=$.oo
 e.toString
 e=A.bd("HEY THERE! ",e.l5(h.a===B.n?B.f:B.j,j),k)
 s=$.qb
@@ -41062,7 +41062,7 @@ m=$.dR
 m.toString
 return A.c0(A.jI(B.bn,A.a([f,A.bM(k,A.dq(A.a([r,s,e,p,o,n,m,B.iK],q),B.b_,B.r,B.x),k,k,k,new A.aN(g*10*0.77+10,g*40*0.77+40,0,0),k,k)],q),B.bZ),i.a.b*1.02,k)}}
 A.ET.prototype={
-G(a){var s,r,q,p,o=null,n="Montserrat",m=A.b1(a,o,t.w).w.a,l=m.b,k=A.wc(0,A.vO(new A.eY(A.f_("assets/photos/black-white.png",o,o,m.a<1200?l*0.75:l*0.85),B.b0,B.bg,B.i,o),0.9),o,o,o,0,o,o),j=$.bk,i=t.p,h=A.cJ(A.a([A.bd("WELCOME TO MY PORTFOLIO! ",$.oo.a4n(n),o),new A.eY(A.f_("assets/hi.gif",o,o,$.bk*12*0.77+12),B.cT,B.bg,B.i,o)],i),B.r,B.aU),g=$.fg
+G(a){var s,r,q,p,o=null,n="Montserrat",m=A.b1(a,o,t.w).w.a,l=m.b,k=A.wc(0,A.vO(new A.eY(A.f_("assets/photos/black-white1.png",o,o,m.a<1200?l*0.75:l*0.85),B.b0,B.bg,B.i,o),0.9),o,o,o,0,o,o),j=$.bk,i=t.p,h=A.cJ(A.a([A.bd("WELCOME TO MY PORTFOLIO! ",$.oo.a4n(n),o),new A.eY(A.f_("assets/hi.gif",o,o,$.bk*12*0.77+12),B.cT,B.bg,B.i,o)],i),B.r,B.aU),g=$.fg
 g.toString
 s=A.bd("Tran Thanh",$.SO.a4w(n,B.e7),o)
 r=A.bd("Phu Em",$.aeK.a4o(1),o)
