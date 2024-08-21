@@ -146,6 +146,13 @@ class AboutDesktop extends StatelessWidget {
                             height: AppDimensions.normalize(13),
                             width: AppDimensions.normalize(40),
                             child: OutlinedButton(
+                              style: OutlinedButton.styleFrom(
+                                side: BorderSide(
+                                  color: appProvider.isDark
+                                      ? Colors.white
+                                      : Colors.grey[900]!,
+                                ), // Set the border color to black (or any color you prefer)
+                              ),
                               onPressed: () =>
                                   html.window.open(StaticUtils.resume, 'pdf'),
                               child: const Text(

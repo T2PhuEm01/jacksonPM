@@ -29,7 +29,7 @@ class _MobileDrawer extends StatelessWidget {
                   title: Text(
                     "Dark Mode",
                     style: TextStyle(
-                      fontSize: 14.sp,
+                      // fontSize: 14,
                       // fontWeight: FontWeight.bold,
                       color: appProvider.isDark ? Colors.white : Colors.black,
                     ),
@@ -62,7 +62,7 @@ class _MobileDrawer extends StatelessWidget {
                             title: Text(
                               e.value,
                               style: TextStyle(
-                                fontSize: 10.sp,
+                                fontSize: 10,
                                 fontFamily: 'Poppins',
                                 // fontWeight: FontWeight.bold,
                                 color: appProvider.isDark
@@ -90,7 +90,7 @@ class _MobileDrawer extends StatelessWidget {
                       title: Text(
                         'RESUME',
                         style: TextStyle(
-                          fontSize: 14.sp,
+                          // fontSize: 14,
                           // fontWeight: FontWeight.bold,
                           color:
                               appProvider.isDark ? Colors.white : Colors.black,

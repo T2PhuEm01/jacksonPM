@@ -11,7 +11,7 @@ class _NavbarDesktop extends StatelessWidget {
       padding: Space.all(),
       color: appProvider.isDark ? Colors.black : Colors.white,
       child: Row(
-        children: [
+        children: <Widget>[
           const NavBarLogo(),
           Space.xm!,
           ...NavBarUtils.names.asMap().entries.map(
@@ -20,45 +20,49 @@ class _NavbarDesktop extends StatelessWidget {
                   index: e.key,
                 ),
               ),
-          EntranceFader(
-            offset: const Offset(0, -10),
-            delay: const Duration(milliseconds: 100),
-            duration: const Duration(milliseconds: 250),
-            child: MaterialButton(
-              hoverColor: AppTheme.c!.primary!.withAlpha(150),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(5.0),
-                side: BorderSide(
-                  color: AppTheme.c!.primary!,
+          Row(
+            children: [
+              EntranceFader(
+                offset: const Offset(0, -10),
+                delay: const Duration(milliseconds: 100),
+                duration: const Duration(milliseconds: 250),
+                child: MaterialButton(
+                  hoverColor: AppTheme.c!.primary!.withAlpha(150),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5.0),
+                    side: BorderSide(
+                      color: AppTheme.c!.primary!,
+                    ),
+                  ),
+                  onPressed: () {
+                    html.window.open(
+                      StaticUtils.resume,
+                      "pdf",
+                    );
+                  },
+                  child: Padding(
+                    padding: Space.all(1.25, 0.45),
+                    child: Text(
+                      'RESUME',
+                      style: AppText.l1b,
+                    ),
+                  ),
                 ),
               ),
-              onPressed: () {
-                html.window.open(
-                  StaticUtils.resume,
-                  "pdf",
-                );
-              },
-              child: Padding(
-                padding: Space.all(1.25, 0.45),
-                child: Text(
-                  'RESUME',
-                  style: AppText.l1b,
-                ),
+              Space.x!,
+              Switch(
+                inactiveTrackColor: Colors.grey,
+                value: appProvider.isDark,
+                onChanged: (value) {
+                  appProvider.setTheme(
+                    !value ? ThemeMode.light : ThemeMode.dark,
+                  );
+                },
+                activeColor: AppTheme.c!.primary!,
               ),
-            ),
+              Space.x!,
+            ],
           ),
-          Space.x!,
-          Switch(
-            inactiveTrackColor: Colors.grey,
-            value: appProvider.isDark,
-            onChanged: (value) {
-              appProvider.setTheme(
-                !value ? ThemeMode.light : ThemeMode.dark,
-              );
-            },
-            activeColor: AppTheme.c!.primary!,
-          ),
-          Space.x!,
         ],
       ),
     );
@@ -80,12 +84,14 @@ class _NavBarTablet extends StatelessWidget {
           IconButton(
             highlightColor:
                 appProvider.isDark ? Colors.white54 : Colors.grey[500],
-            splashRadius: AppDimensions.normalize(10),
+            splashRadius: AppDimensions.normalize(15),
             onPressed: () {
+              print('mow draw');
               drawerProvider.key.currentState!.openDrawer();
             },
             icon: Icon(
               Icons.menu,
+              size: AppDimensions.normalize(15),
               color: appProvider.isDark ? Colors.white : Colors.grey[900],
             ),
           ),
